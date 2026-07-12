@@ -24,6 +24,20 @@
             </nav>
         </div>
     </header>
+    <!-- 우측 상단 햄버거 아이콘 (작대기 3개) -->
+<div class="hamburger-menu">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+</div>
+
+<!-- 모바일용 네비게이션 메뉴 (처음엔 숨겨져 있음) -->
+<nav class="mobile-nav">
+    <!-- href 부분은 파트너가 만들어둔 각 섹션의 id로 수정해서 써! -->
+    <a href="#about" class="mobile-link">About Us</a>
+    <a href="#product" class="mobile-link">Product</a>
+    <a href="#contact" class="mobile-link">Contact</a>
+</nav>
 
     <!-- SECTION 01: HERO (메인 배너) -->
     <section id="hero" class="hero-section">
@@ -229,4 +243,21 @@
     </script>
 <script src="script.js"></script>
 </body>
+<script>
+    const hamburger = document.querySelector(".hamburger-menu");
+    const mobileNav = document.querySelector(".mobile-nav");
+    const mobileLinks = document.querySelectorAll(".mobile-link");
+
+    // 햄버거 아이콘을 클릭하면 메뉴창이 열리거나 닫힘
+    hamburger.addEventListener("click", () => {
+        mobileNav.classList.toggle("active");
+    });
+
+    // 메뉴 항목(글씨)을 클릭하면 원하는 파트로 이동하면서 메뉴창이 다시 닫힘
+    mobileLinks.forEach(link => {
+        link.addEventListener("click", () => {
+            mobileNav.classList.remove("active");
+        });
+    });
+</script>
 </html>
