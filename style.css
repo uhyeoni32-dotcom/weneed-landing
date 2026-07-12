@@ -622,3 +622,32 @@ body {
         margin-top: 10px; /* 위 메뉴들과 간격 조금 더 벌리기 */
     }
 }
+.section-container {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.header-box {
+    margin-bottom: 50px;
+}
+
+.main-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    letter-spacing: 8px; /* 타이틀은 자간을 넓게 */
+    margin-bottom: 10px;
+}
+
+.sub-copy {
+    font-size: 1.1rem;
+    font-style: italic; /* 슬로건은 이탤릭체로 감성적이게 */
+    color: #8C7B65;     /* 베이지 브라운 컬러 */
+}
+
+.desc {
+    word-break: keep-all; 
+    line-height: 1.8;
+    font-size: 1.1rem;
+    max-width: 600px;    /* 너무 길어지지 않게 최대 폭 제한 */
+    margin: 0 auto;
+}
