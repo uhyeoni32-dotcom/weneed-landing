@@ -687,4 +687,8 @@ body {
     width: 100%;       /* 가로는 꽉 채우고 */
     height: 300px;     /* 이 숫자를 원하는 높이로 맞추면 돼 */
     object-fit: cover; /* 사진 비율이 달라도 찌그러짐 없이 딱 맞게 잘라줌 */
+}.gallery .img {
+    width: 100% !important;
+    height: 300px !important; /* 여기 높이 숫자를 똑같이 맞췄는지 확인! */
+    object-fit: cover !important;
 }
