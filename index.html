@@ -24,20 +24,39 @@
             </nav>
         </div>
     </header>
-    <!-- 우측 상단 햄버거 아이콘 (작대기 3개) -->
+   <!-- 1. 우측 상단 햄버거 아이콘 -->
 <div class="hamburger-menu">
     <span class="bar"></span>
     <span class="bar"></span>
     <span class="bar"></span>
 </div>
 
-<!-- 모바일용 네비게이션 메뉴 (처음엔 숨겨져 있음) -->
+<!-- 2. 모바일용 전체화면 메뉴판 (사진에 있는 메뉴 적용) -->
 <nav class="mobile-nav">
-    <!-- href 부분은 파트너가 만들어둔 각 섹션의 id로 수정해서 써! -->
-    <a href="#about" class="mobile-link">About Us</a>
-    <a href="#product" class="mobile-link">Product</a>
-    <a href="#contact" class="mobile-link">Contact</a>
+    <a href="#story" class="mobile-link">Story</a>
+    <a href="#atelier" class="mobile-link">Atelier</a>
+    <a href="#gallery" class="mobile-link">Gallery</a>
+    <a href="#message" class="mobile-link">Message</a>
+    <!-- 버튼 스타일을 위해 특별히 notify-btn 클래스 추가 -->
+    <a href="#notify" class="mobile-link notify-btn">출시 알림</a>
 </nav>
+
+<!-- 3. 메인 파트 텍스트 수정 (마침표 제거 및 줄바꿈 적용) -->
+<section id="story"> <!-- id를 메뉴 href와 똑같이 맞춤 -->
+    <p class="hero-desc">
+        <br><br>
+        길거리를 걷다 보면 많은 사람들이 커피를 들고 있습니다<br>
+        그리고 그 작은 질문이 Weneed의 시작이 되었습니다
+    </p>
+</section>
+
+<!-- 4. 방수/물기 파트 텍스트 수정 (마침표 제거 및 줄바꿈 적용) -->
+<section id="atelier"> <!-- id를 메뉴 href와 똑같이 맞춤 -->
+    <p class="waterproof-desc">
+        커피를 오래 들고 있으면 자연스럽게 생기는 물기<br>
+        흡수력이 좋은 안감을 적용해 손에 닿는 축축함은 줄이고 더 오래 쾌적하게 사용할 수 있습니다
+    </p>
+</section>
 
     <!-- SECTION 01: HERO (메인 배너) -->
     <section id="hero" class="hero-section">
@@ -244,20 +263,22 @@
 <script src="script.js"></script>
 </body>
 <script>
-    const hamburger = document.querySelector(".hamburger-menu");
+   const hamburger = document.querySelector(".hamburger-menu");
     const mobileNav = document.querySelector(".mobile-nav");
     const mobileLinks = document.querySelectorAll(".mobile-link");
 
-    // 햄버거 아이콘을 클릭하면 메뉴창이 열리거나 닫힘
+    // 작대기 3개 누르면 메뉴 열기/닫기
     hamburger.addEventListener("click", () => {
         mobileNav.classList.toggle("active");
     });
 
-    // 메뉴 항목(글씨)을 클릭하면 원하는 파트로 이동하면서 메뉴창이 다시 닫힘
+    // 메뉴 항목 누르면 해당 파트로 이동하면서 메뉴창은 자동으로 닫기
     mobileLinks.forEach(link => {
         link.addEventListener("click", () => {
             mobileNav.classList.remove("active");
         });
     });
+    
+    
 </script>
 </html>
