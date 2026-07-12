@@ -650,4 +650,17 @@ body {
     font-size: 1.1rem;
     max-width: 600px;    /* 너무 길어지지 않게 최대 폭 제한 */
     margin: 0 auto;
+}.main-title {
+    font-size: 1.8rem; /* 제목이 길어졌으니 사이즈를 조금 줄여서 밸런스 조정 */
+    font-weight: bold;
+    letter-spacing: -0.5px; /* 제목이 길 땐 자간을 좁히는 게 더 예뻐 */
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.sub-copy {
+    font-size: 1.1rem;
+    font-style: italic;
+    color: #8C7B65;
+    margin-bottom: 40px; /* 제목과 본문 사이 간격 확보 */
 }
