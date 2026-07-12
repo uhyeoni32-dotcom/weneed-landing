@@ -663,4 +663,23 @@ body {
     font-style: italic;
     color: #8C7B65;
     margin-bottom: 40px; /* 제목과 본문 사이 간격 확보 */
+}/* 검정 배경 및 흰색 글씨로 전체적인 톤을 맞춤 */
+.section-container {
+    background-color: #0F0F0F; /* 깊이감 있는 어두운 블랙 */
+    color: #FFFFFF;           /* 글씨는 깨끗한 화이트로 */
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* 햄버거 메뉴가 검정 배경에서 잘 보이게 */
+.mobile-nav {
+    background-color: #0F0F0F !important; /* 배경색 강제 적용 */
+}
+
+.mobile-link {
+    color: #FFFFFF !important; /* 글씨를 흰색으로 */
+}
+
+.hamburger-menu .bar {
+    background-color: #FFFFFF !important; /* 작대기도 흰색으로 */
 }
